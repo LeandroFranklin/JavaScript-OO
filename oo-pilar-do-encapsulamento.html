@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript</title>
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+        <script type="text/babel">
+
+            class Tv{
+                constructor(){
+                    this._relacaoCanais = Array(2, 4, 5, 7, 15);
+                    this._canalAtivo = 5;
+                    this._volume = 5;
+                }
+
+                get canalAtivo(){
+                    return this._canalAtivo;
+                }
+
+                set canalAtivo(canal){
+                    this._canalAtivo = canal;
+                }
+            }
+            
+        </script>
+    </head>
+    <body>
+
+
+        <div id="output"></div>
+        
+    </body>
+</html>
