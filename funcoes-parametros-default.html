@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript</title>
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+        <script type="text/babel">
+
+            function contarHistoria(personagem = "Max", atividade = "correr", nome_dono = "Jorge"){
+                document.write(`Era uma vez um cxachorro chamado ${personagem}, ele adora ${atividade}, seu dono era ${nome_dono} e eles viveram felizes para sempre.`);
+            }
+
+            /*Como eu chamei a função e não coloquei os paramentros, os já pré-definidos iram ficar*/
+
+            contarHistoria(undefined, "enterar ossos", "Davi");
+            
+        </script>
+    </head>
+    <body>
+
+
+        <div id="output"></div>
+        
+    </body>
+</html>
