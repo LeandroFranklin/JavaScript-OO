@@ -7,9 +7,10 @@
         <script type="text/babel">
 
             class Animal{
-                constructor(){
-                    this.cor = "";
-                    this.tamanho = null;
+                constructor(cor, tamanho, peso){
+                    this.cor = cor;
+                    this.tamanho = tamanho;
+                    this.cor = cor;
                 }
 
                 dormir(){
@@ -17,25 +18,10 @@
                 }
             }
 
-            class Cachorro extends Animal{
-                constructor(){
-                    super();
-                    this.orelhas = "Grandes e caídas";
-                }
-
-                correr(){
-                    console.log("Correr");
-                }
-
-                rosnar(){
-                    console.log("Rosnar");
-                }
-            }
-
             class Passaro extends Animal{
-                constructor(){
-                    super();
-                    this.bico = "Curto";
+                constructor(cor, tamanho, peso, bico){
+                    super(cor, tamanho, peso);
+                    this.bico = bico;
                 }
 
                 voar(){
@@ -44,15 +30,18 @@
             }
 
             class Papagaio extends Passaro{
-                constructor(){
-                    super();
-                    this.saberFalar = true;
+                constructor(cor, tamanho, peso, bico, saberFalar){
+                    super(cor, tamanho, peso, bico);
+                    this.saberFalar = saberFalar;
                 }
 
                 falar(){
                     console.log("Falar");
                 }
             }
+
+            let papagaio = new Papagaio("verde", "médio", 350, "médio", true);
+            console.log(papagaio);
             
         </script>
     </head>
