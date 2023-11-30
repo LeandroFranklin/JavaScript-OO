@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript</title>
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+        <script type="text/babel">
+
+            let bicicletaFactory = function(cor, marcha, aro){
+                return {
+                cor: cor,
+                marcha: marcha,
+                aro: aro,
+                pedalar(){console.log("Métod pedalar acionado")}
+                }
+            }
+
+            let bicicleta1 = bicicletaFactory("Vermelha", "18", 20);
+            console.log(bicicleta1);
+            
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>
