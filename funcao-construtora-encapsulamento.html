@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript</title>
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+        <script type="text/babel">
+
+            let Carro = function(){
+                this.cor = "Amarelo";
+                this.velocidadeAtual = 0;
+                this.velocidadeMaxima = 100;
+
+                this.acelerar = function(){
+
+                    let velocidade = this.getVelocidadeAtual() + 50;
+                    if(velocidade > this.velocidadeMaxima){
+                        velocidade = this.velocidadeMaxima;
+                    }
+                    this.setVelocidadeAtual(velocidade);
+                }
+
+                this.getVelocidadeAtual = function() {
+                    return this.velocidadeAtual;
+                }
+
+                this.setVelocidadeAtual = function(velocidadeAtual){
+                    this.velocidadeAtual = velocidadeAtual;
+                }
+
+            }
+            
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>
