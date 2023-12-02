@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript</title>
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+        <script type="text/babel">
+
+            //contexto spreed
+
+            //string
+            let tituloArtigo = "Como utilizar o operador rest/spreed";
+
+            console.log(tituloArtigo);
+            console.log(...tituloArtigo); // As letras serão exibidas separadamente
+            console.log([...tituloArtigo]); //As letras separadas vão ser armazenadas em um array
+
+            //arrays
+            let listaCursos1 = ["NodeJS e MongoDB", "ES6, TypeScript e Angular 4"];
+            let listaCursos2 = ["Multiplataforma Android/IOS", "Introdução ao GNU/Linux"];
+            let listaCursosCompleto = ["Web Completo", "Android", ...listaCursos1, ...listaCursos2];
+            //Aqui os itens dos outros arrays se tornam elementos desse array
+
+            console.log(listaCursosCompleto);
+
+            //Objetos
+
+            let pessoa = {nome: "Jorge", idade: 27};
+            let clone = {endereco: "Decida do Rosário", ...pessoa};
+
+            console.log(clone);
+            
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>
