@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript</title>
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+        <script type="text/babel">
+
+            let produto = {
+                descricao: "Notebook",
+                preco: 8300,
+                detalhes : {
+                    fabricante: "Dell",
+                    modelo: "G15"
+                }
+            }
+
+            /*
+            tokens
+            arrays - []
+            objetos - {}
+            */
+
+            let {descricao, preco, desconto = 1000} = produto;
+            console.log(descricao, preco, desconto);
+
+            let {detalhes: {fabricante, modelo}} = produto;
+            console.log(fabricante, modelo);
+            
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>
