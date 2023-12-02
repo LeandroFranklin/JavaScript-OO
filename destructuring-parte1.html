@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript</title>
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+        <script type="text/babel">
+
+            //destructuring
+
+            let frutas = ["Abacaxi", "Uva", "Pera", "Mamão"];
+
+            let [a, b, ,c, l = "Banana"] = frutas; //indice sem valor = pular valor
+
+            console.log(a, b, c, l);
+
+
+            //array bidimensional
+
+            let coisas = [["Abacaxi", "Uva", "Pera", "Mamão"], ["Davi", "Jorge"]];
+            let [,[, n2]] = coisas;
+
+            console.log(n2);
+
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>
